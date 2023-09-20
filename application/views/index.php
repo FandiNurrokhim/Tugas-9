@@ -1,21 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Konversi Numerike ke INT dan sebaliknya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan</title>
+    <style>
+        body {
+            background-color: #00DBDE;
+            font-size: 14px;
+        }
+
+        .provinsi {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- <h1>Konversi Angka ke Romawi</h1>
-    <p>Angka: <?= $angka; ?></p>
-    <p>Romawi: <?= $angka_romawi; ?></p>
-
-    <h1>Konversi Romawi ke Angka</h1>
-    <p>Romawi: <?= $romawi; ?></p>
-    <p>Angka: <?= $angka_kembali; ?></p> -->
-
-    <h1>Tanggal 'Y-m-d': <?= $tanggal_y_m_d; ?></h1>
-    <h1>Tanggal 'd M Y': <?= $tanggal_d_M_y; ?></h1>
+    <div class="provinsi">
+        <h1>Provinsi Jawa Timur</h1>
+        <h1>Kota Magetan</h1>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <p>Nama</p>
+                <p>Tempat/Tgl Lahir</p>
+                <p>Alamat</p>
+            </td>
+            <td>
+                <p>: <?= $nama ?></p>
+                <p>: <?= $tempat_lahir?>, <?= $tanggal_lahir ?></p>
+                <p>: <?= $alamat ?></p>
+            </td>
+            <td width="70"><img src="<?= $logo; ?>"></td>
+        </tr>
+    </table>
 </body>
 
 </html>
